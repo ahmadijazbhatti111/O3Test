@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.o3.o3interfacestest.presentaion.ui.home.HomeFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_mainFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.o3.o3interfacestest.presentaion.ui.result.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="transfereddata"
+            app:argType="com.o3.o3interfacestest.domain.model.User[]"
+            android:defaultValue='@null'
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_history"
+        android:id="@+id/historyFragment"
+        android:name="com.o3.o3interfacestest.presentaion.ui.history.HistoryFragment"
+        android:label="History" >
+    </fragment>
+</navigation>

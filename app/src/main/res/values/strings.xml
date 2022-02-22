@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">O3InterfacesTest</string>
+    <string name="home">home</string>
+    <string name="histroty">History</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+</resources>
